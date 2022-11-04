@@ -38,12 +38,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ofertas</title>
     <link rel="shortcut icon" href="../recurso/imagen/logo.svg" />
-    <!--bootstrap 3 requerido por tabla-->
-
-
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="../js/tabla.js"></script>
-    <link href="../css/tabla.css" rel="stylesheet">
 
     <!--bootstrap 4 requerido por sidebar-->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
@@ -372,203 +366,108 @@
             </div>
         </nav>
         <!-- sidebar-wrapper  -->
-        <main class="page-content">
+        <main class="page-content ">
             <div class="container-fluid">
-                <div class="container">
-                    <div class="row">
-
-                        <section class="container">
-                            <h1 class="text-center">Postulantes</h1>
-                            <div class="">
-                                <div class="panel panel-default">
-                                    <div class="panel-body">
-                                        <div class="pull-right">
-                                            <div class="btn-group">
-                                                <button type="button" class="btn btn-success btn-filter"
-                                                    data-target="pagado">Contratado</button>
-                                                <button type="button" class="btn btn-warning btn-filter"
-                                                    data-target="pendiente">Pendiente</button>
-                                                <button type="button" class="btn btn-danger btn-filter"
-                                                    data-target="cancelado">Rechazado</button>
-                                                <button type="button" class="btn btn-default btn-filter"
-                                                    data-target="all">Todos</button>
-                                            </div>
+                <section class="testimonials text-center ">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-8 mx-auto wow fadeInUp">
+                                <h3 class="text-center font-weight-bold">POSTU<span class="bg-main">LAD</span>
+                                    EN UN SECTOR</h3>
+                                <p class=" text-center">Elige entre cuatro sectores y mira sus ofertas o visita sus
+                                    redes sociales para mas información</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="container mb-5 mt-5">
+                                <div class="pricing card-deck flex-column flex-md-row mb-3">
+                                    <div class="card card-pricing popular shadow text-center px-3 mb-4 wow bounceInUp"
+                                        data-wow-duration="1.4s">
+                                        <span
+                                            class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Mantenimiento</span>
+                                        <div class="bg-transparent card-header pt-4 border-0">
+                                            <h1 class="h1 font-weight-normal text-primary text-center mb-0"
+                                                data-pricing-value="15">$<span class="price">80.000</span><span
+                                                    class="h6 text-muted ml-2">/ por mes</span></h1>
                                         </div>
-                                        <div class="table-container">
-                                            <table class="table table-filter">
-                                                <tbody>
-                                                    <tr data-status="pagado">
-                                                        <td>
-                                                            <div class="ckbox">
-                                                                <input type="checkbox" id="checkbox1">
-                                                                <label for="checkbox1"></label>
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <a href="javascript:;" class="star">
-                                                                <i class="fa fa-star"></i>
-                                                            </a>
-                                                        </td>
-                                                        <td>
-                                                            <div class="media">
-                                                                <a href="#" class="pull-left">
-                                                                    <img src="../recurso/imagen/logo.svg"
-                                                                        class="media-photo">
-                                                                </a>
-                                                                <div class="media-body">
-                                                                    <span class="media-meta pull-right">Febrero 13,
-                                                                        2016</span>
-                                                                    <h4 class="title">
-                                                                        Juan Gallardo
-                                                                        <span
-                                                                            class="pull-right pagado">(Contratado)</span>
-                                                                    </h4>
-                                                                    <p class="summary">Sector de seguridad</p>
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr data-status="pendiente">
-                                                        <td>
-                                                            <div class="ckbox">
-                                                                <input type="checkbox" id="checkbox3">
-                                                                <label for="checkbox3"></label>
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <a href="javascript:;" class="star">
-                                                                <i class="fa fa-star"></i>
-                                                            </a>
-                                                        </td>
-                                                        <td>
-                                                            <div class="media">
-                                                                <a href="#" class="pull-left">
-                                                                    <img src="../recurso/imagen/logo.svg"
-                                                                        class="media-photo">
-                                                                </a>
-                                                                <div class="media-body">
-                                                                    <span class="media-meta pull-right">Febrero 13,
-                                                                        2016</span>
-                                                                    <h4 class="title">
-                                                                        Mikaela Patagua
-                                                                        <span
-                                                                            class="pull-right pendiente">(Pendiente)</span>
-                                                                    </h4>
-                                                                    <p class="summary">Sector de Desarrollo</p>
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr data-status="cancelado">
-                                                        <td>
-                                                            <div class="ckbox">
-                                                                <input type="checkbox" id="checkbox2">
-                                                                <label for="checkbox2"></label>
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <a href="javascript:;" class="star">
-                                                                <i class="fa fa-star"></i>
-                                                            </a>
-                                                        </td>
-                                                        <td>
-                                                            <div class="media">
-                                                                <a href="#" class="pull-left">
-                                                                    <img src="../recurso/imagen/logo.svg"
-                                                                        class="media-photo">
-                                                                </a>
-                                                                <div class="media-body">
-                                                                    <span class="media-meta pull-right">Febrero 13,
-                                                                        2016</span>
-                                                                    <h4 class="title">
-                                                                        jasinto Valdez
-                                                                        <span
-                                                                            class="pull-right cancelado">(Rechazado)</span>
-                                                                    </h4>
-                                                                    <p class="summary">Sector de Mantenimiento</p>
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr data-status="pagado" class="selected">
-                                                        <td>
-                                                            <div class="ckbox">
-                                                                <input type="checkbox" id="checkbox4" checked>
-                                                                <label for="checkbox4"></label>
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <a href="javascript:;" class="star star-checked">
-                                                                <i class="fa fa-star"></i>
-                                                            </a>
-                                                        </td>
-                                                        <td>
-                                                            <div class="media">
-                                                                <a href="#" class="pull-left">
-                                                                    <img src="../recurso/imagen/logo.svg"
-                                                                        class="media-photo">
-                                                                </a>
-                                                                <div class="media-body">
-                                                                    <span class="media-meta pull-right">Febrero 13,
-                                                                        2016</span>
-                                                                    <h4 class="title">
-                                                                        Mariano Moras
-                                                                        <span
-                                                                            class="pull-right pagado">(Contratado)</span>
-                                                                    </h4>
-                                                                    <p class="summary">Sector de seguridad</p>
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr data-status="pendiente">
-                                                        <td>
-                                                            <div class="ckbox">
-                                                                <input type="checkbox" id="checkbox5">
-                                                                <label for="checkbox5"></label>
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <a href="javascript:;" class="star">
-                                                                <i class="fa fa-star"></i>
-                                                            </a>
-                                                        </td>
-                                                        <td>
-                                                            <div class="media">
-                                                                <a href="#" class="pull-left">
-                                                                    <img src="../recurso/imagen/logo.svg"
-                                                                        class="media-photo">
-                                                                </a>
-                                                                <div class="media-body">
-                                                                    <span class="media-meta pull-right">Febrero 13,
-                                                                        2016</span>
-                                                                    <h4 class="title">
-                                                                        Laura Fernadez
-                                                                        <span
-                                                                            class="pull-right pendiente">(Pendiente)</span>
-                                                                    </h4>
-                                                                    <p class="summary">Sector de Administración</p>
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                        <div class="card-body pt-0">
+                                            <ul class="list-unstyled mb-4">
+                                                <li>A tiempo completo</li>
+                                                <li>No requiere título</li>
+                                                <li>Se requiere 3 años de experiencia como mínimo</li>
+
+                                            </ul>
+                                            <a href="../html/postulacion.html"
+                                                class="btn btn btn-outline-secondary mb-3">Postular</a>
+                                        </div>
+                                    </div>
+                                    <div class="card card-pricing popular shadow text-center px-3 mb-4 wow bounceInUp"
+                                        data-wow-duration="1.4s">
+                                        <span
+                                            class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Desarrollo</span>
+                                        <div class="bg-transparent card-header pt-4 border-0">
+                                            <h1 class="h1 font-weight-normal text-primary text-center mb-0"
+                                                data-pricing-value="30">$<span class="price">110.500</span><span
+                                                    class="h6 text-muted ml-2">/ por mes</span></h1>
+                                        </div>
+                                        <div class="card-body pt-0">
+                                            <ul class="list-unstyled mb-4">
+                                                <li>5 vacantes</li>
+                                                <li>Analista en Sistemas</li>
+                                                <li>no requiere experincia</li>
+                                                <li>Periodo de 6 meses</li>
+                                            </ul>
+                                            <a href="../html/postulacion.html"
+                                                class="btn btn btn-outline-secondary mb-3">Postular</a>
+                                        </div>
+                                    </div>
+                                    <div class="card card-pricing popular shadow text-center px-3 mb-4 wow bounceInUp"
+                                        data-wow-duration="1.4s">
+                                        <span
+                                            class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Seguridad</span>
+                                        <div class="bg-transparent card-header pt-4 border-0">
+                                            <h1 class="h1 font-weight-normal text-primary text-center mb-0"
+                                                data-pricing-value="45">$<span class="price">55.599</span><span
+                                                    class="h6 text-muted ml-2">/ por mes</span></h1>
+                                        </div>
+                                        <div class="card-body pt-0">
+                                            <ul class="list-unstyled mb-4">
+                                                <li>Solo los dines de semana</li>
+                                                <li>Edad mínima 30 años</li>
+
+                                            </ul>
+                                            <a href="../html/postulacion.html"
+                                                class="btn btn btn-outline-secondary mb-3">Postular</a>
+                                        </div>
+                                    </div>
+                                    <div class="card card-pricing popular shadow text-center px-3 mb-4 wow bounceInUp"
+                                        data-wow-duration="1.4s">
+                                        <span
+                                            class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Desarrollo</span>
+                                        <div class="bg-transparent card-header pt-4 border-0">
+                                            <h1 class="h1 font-weight-normal text-primary text-center mb-0"
+                                                data-pricing-value="60">$<span class="price">Indefinido</span><span
+                                                    class="h6 text-muted ml-2">/ por mes</span></h1>
+                                        </div>
+                                        <div class="card-body pt-0">
+                                            <ul class="list-unstyled mb-4">
+                                                <li>Un puesto</li>
+                                                <li>Ingeniero en Sonido</li>
+                                                <li>Turno nocturno</li>
+
+                                            </ul>
+                                            <a href="../html/postulacion.html"
+                                                class="btn btn btn-outline-secondary mb-3">Postular</a>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="text-center">
-                                    <p>
-                                        Page © - 2016 <br>
-                                        Powered By <a href="https://www.facebook.com/tavo.qiqe.lucero"
-                                            target="_blank">TavoQiqe</a>
-                                    </p>
-                                </div>
                             </div>
-                        </section>
+                            <div class="text-muted mt-5 mb-5 text-center small wow fadeInUp">by : <a class="text-muted"
+                                    target="_blank" href="http://totoprayogo.com">totoprayogo.com</a></div>
 
+                        </div>
                     </div>
-                </div>
+                </section>
             </div>
         </main>
         <!-- page-content" -->

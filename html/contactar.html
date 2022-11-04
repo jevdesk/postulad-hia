@@ -36,7 +36,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ofertas</title>
+    <title>Nosotros</title>
     <link rel="shortcut icon" href="../recurso/imagen/logo.svg" />
 
     <!--bootstrap 4 requerido por sidebar-->
@@ -78,7 +78,9 @@
 
     <!------ css local ---------->
     <link href="../css/style.css" rel="stylesheet">
-    <link href="../css/registro.css" rel="stylesheet">
+    <link href="../css/sidebar2.css" rel="stylesheet" id="bootstrap-css">
+    <link href="../css/contactar.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -165,145 +167,244 @@
             </div>
         </div>
     </nav>
-    <div class="page-wrapper chiller-theme toggled register">
-        <div class="container ">
-            <div class="row">
-                <div class="col-md-3 register-left">
-                    <img src="../recurso/imagen/2442125.svg" alt="" />
-                    <h3>Bienvenido</h3>
-                    <p>¡A solo unos segundos de disfrutar de nuestros servicio!</p>
-                    <input type="submit" name="" value="Entrar" /><br />
+    <div class="page-wrapper chiller-theme toggled">
+        <!-- boton de menú  -->
+        <a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
+            menú
+            <br>
+            <i class="fas fa-bars"></i>
+        </a>
+        <!-- sidebar  -->
+        <nav id="sidebar" class="sidebar-wrapper">
+            <div class="sidebar-content">
+                <div class="sidebar-brand  ">
+                    <a href="#">
+                        <h5 class="my-heading">Postu<span class="bg-main">lad</span></h5>
+                    </a>
+                    <div id="close-sidebar">
+                        <i class="fas fa-times"></i>
+                    </div>
                 </div>
-                <div class="col-md-9 register-right">
-                    <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
-                        <li class="nav-item">
-                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
-                                aria-controls="home" aria-selected="true">Postulante</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
-                                aria-controls="profile" aria-selected="false">Reclutador</a>
-                        </li>
-                    </ul>
-                    <div class="tab-content" id="myTabContent">
-                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                            <h3 class="register-heading">Registrar como postulante</h3>
-                            <div class="row register-form">
-                                <div class="col-md-12 col-lg-6">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Nombre *" value="" />
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Apellido *" value="" />
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="password" class="form-control" placeholder="Contraseña *"
-                                            value="" />
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="password" class="form-control" placeholder="Confirmar contraseña *"
-                                            value="" />
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="maxl">
-                                            <label class="radio inline">
-                                                <input type="radio" name="gender" value="male" checked>
-                                                <span> Masculino </span>
-                                            </label>
-                                            <label class="radio inline">
-                                                <input type="radio" name="gender" value="female">
-                                                <span>Femenino</span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-12 col-lg-6">
-                                    <div class="form-group">
-                                        <input type="email" class="form-control" placeholder="Su Email *" value="" />
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="text" minlength="10" maxlength="10" name="txtEmpPhone"
-                                            class="form-control" placeholder="Su Teléfono *" value="" />
-                                    </div>
-                                    <div class="form-group">
-                                        <select class="form-control">
-                                            <option class="hidden" selected disabled>Seleccione una pregunta de
-                                                seguridad
-                                            </option>
-                                            <option>¿Cúando es tu cumpleaños?</option>
-                                            <option>¿Cúal es tu comida favorita?</option>
-                                            <option>¿Cúales el nombre de su mascota?</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Escriba la respuesta *"
-                                            value="" />
-                                    </div>
-                                    <input type="submit" class="btnRegister" value="Registrar" />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade show" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                            <h3 class="register-heading">Registrar como Reclutador</h3>
-                            <div class="row register-form">
-                                <div class="col-md-12 col-lg-6">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Nombre *" value="" />
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Apellido *" value="" />
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="email" class="form-control" placeholder="Email *" value="" />
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="text" maxlength="10" minlength="10" class="form-control"
-                                            placeholder="Teléfono *" value="" />
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="text" maxlength="10" minlength="10" class="form-control"
-                                            placeholder="Legajo *" value="" />
-                                    </div>
-                                    <div class="form-group">
-                                        <label for=""> Solicitar código de verificación <a
-                                                href="mailto:jevkjev@gmail.com" target="_blank">aquí</a></label>
-                                        <input type="text" maxlength="10" minlength="10" class="form-control"
-                                            placeholder="Codigo de verificación *" value="" />
-                                    </div>
-
-                                </div>
-                                <div class="col-md-12 col-lg-6">
-                                    <div class="form-group">
-                                        <input type="password" class="form-control" placeholder="Contraseña *"
-                                            value="" />
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="password" class="form-control" placeholder="Confirmar Contraseña *"
-                                            value="" />
-                                    </div>
-                                    <div class="form-group">
-                                        <select class="form-control">
-                                            <option class="hidden" selected disabled>Seleccione una pregunta de
-                                                seguridad
-                                            </option>
-                                            <option>¿Cúando es tu cumpleaños?</option>
-                                            <option>¿Cúal es tu comida favorita?</option>
-                                            <option>¿Cúales el nombre de su mascota?</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="La respuesta es *"
-                                            value="" />
-                                    </div>
-                                    <input type="submit" class="btnRegister" value="Registrar" />
-                                </div>
+                <div class="sidebar-header">
+                    <div class="user-pic">
+                        <img class="img-responsive img-rounded" src="../recurso/imagen/logo.svg" alt="User picture">
+                    </div>
+                    <div class="user-info">
+                        <span class="user-name">Jonatan
+                            <strong>Vera</strong>
+                        </span>
+                        <span class="user-role">Administrator</span>
+                        <span class="user-status">
+                            <i class="fa fa-circle"></i>
+                            <span>Online</span>
+                        </span>
+                    </div>
+                </div>
+                <!-- sidebar-header  -->
+                <div class="sidebar-search">
+                    <div>
+                        <div class="input-group">
+                            <input type="text" class="form-control search-menu" placeholder="Buscar...">
+                            <div class="input-group-append">
+                                <span class="input-group-text">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                </span>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+                <!-- sidebar-search  -->
+                <div class="sidebar-menu">
+                    <ul>
+                        <li class="header-menu">
+                            <span>General</span>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="fa fa-id-card-o"></i>
+                                <span>Postulaciones</span>
+                                <span class="badge badge-pill badge-warning">New</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="../html/postulaciones_historial.html">Sector 1
+                                            <span class="badge badge-pill badge-success">3</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../html/postulaciones_historial.html">Sector 2<span
+                                                class="badge badge-pill badge-success">5</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="../html/postulaciones_historial.html">Sector 3<span
+                                                class="badge badge-pill badge-danger">0</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="../html/postulaciones_historial.html">Sector 3<span
+                                                class="badge badge-pill badge-danger">0</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="fa fa-file-word-o"></i>
+                                <span>Ofertas</span>
+                                <span class="badge badge-pill badge-warning">New</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="../html/ofertas_laborales.html">Sector 1
+                                            <span class="badge badge-pill badge-success">3</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../html/ofertas_laborales.html">Sector 2<span
+                                                class="badge badge-pill badge-success">5</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="../html/ofertas_laborales.html">Sector 3<span
+                                                class="badge badge-pill badge-primary">0</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="../html/ofertas_laborales.html">Sector 3<span
+                                                class="badge badge-pill badge-primary">0</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
 
-        </div>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="fa fa-chart-line"></i>
+                                <span>Estadisticas</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="#">Pie chart<span
+                                                class="badge badge-pill badge-light text-dark">off</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Line chart<span
+                                                class="badge badge-pill badge-light text-dark">off</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Bar chart<span
+                                                class="badge badge-pill badge-light text-dark">off</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Histogram<span
+                                                class="badge badge-pill badge-light text-dark">off</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="fa fa-globe"></i>
+                                <span>Ubicaciones</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="../html/ubicacion.html">Google maps<span
+                                                class="badge badge-pill badge-success ">on</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Open street map<span
+                                                class="badge badge-pill badge-light text-dark">off</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header-menu">
+                            <span>Extra</span>
+                        </li>
+                        <li>
+                            <a href="../html/nosotros.html">
+                                <i class="fa fa-book"></i>
+                                <span>Documentación</span>
+                                <span class="badge badge-pill badge-primary">Beta</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-calendar"></i>
+                                <span>Calendario</span><span class="badge badge-pill badge-light text-dark">off</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-folder"></i>
+                                <span>Archivos</span><span class="badge badge-pill badge-light text-dark">off</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- sidebar-menu  -->
+
+            </div>
+            <!-- sidebar-content  -->
+            <div class="sidebar-footer">
+                <a href="../html/nosotros.html">
+                    <i class="fa fa-bell"></i>
+                    <span class="badge badge-pill badge-warning notification">3</span>
+                </a>
+                <a href="../html/contactar.html">
+                    <i class="fa fa-envelope"></i>
+                    <span class="badge badge-pill badge-success notification">7</span>
+                </a>
+                <a href="../html/postulacion.html">
+                    <i class="fa fa-cog"></i>
+                    <span class="badge-sonar"></span>
+                </a>
+                <a href="../index.html">
+                    <i class="fa fa-power-off"></i>
+                </a>
+            </div>
+        </nav>
+        <!-- sidebar-wrapper  -->
+        <main class="page-content contactar ">
+            <div class="container-fluid">
+
+                <div class="container contact-form">
+                    <div class="contact-image">
+                        <img src="../recurso/imagen/rocket_contact.png" alt="rocket_contact" />
+                    </div>
+                    <form method="post">
+                        <h3>Envía un mesaje</h3>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" name="txtName" class="form-control" placeholder="Nombre *"
+                                        value="" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="txtEmail" class="form-control" placeholder="Email *"
+                                        value="" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="txtPhone" class="form-control" placeholder="Teléfono *"
+                                        value="" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="submit" name="btnSubmit" class="btnContact" value="Enviar" disabled />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <textarea name="txtMsg" class="form-control" placeholder="Escribir *"
+                                        style="width: 100%; height: 150px;"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
         <!-- page-content" -->
     </div>
 
