@@ -2,10 +2,48 @@
 <html lang="es">
 
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9BR7KDVLK2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-9BR7KDVLK2');
+    </script>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (m, e, t, r, i, k, a) {
+            m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+            m[i].l = 1 * new Date();
+            for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
+            k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+        })
+            (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(91054293, "init", {
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+            webvisor: true,
+            ecommerce: "dataLayer"
+        });
+    </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/91054293" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ofertas</title>
     <link rel="shortcut icon" href="../recurso/imagen/logo.svg" />
+    <!--bootstrap 3 requerido por tabla-->
+
+
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="../js/tabla.js"></script>
+    <link href="../css/tabla.css" rel="stylesheet">
 
     <!--bootstrap 4 requerido por sidebar-->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
@@ -195,18 +233,21 @@
                             <div class="sidebar-submenu">
                                 <ul>
                                     <li>
-                                        <a href="#">Sector 1
+                                        <a href="../html/postulaciones_historial.html">Sector 1
                                             <span class="badge badge-pill badge-success">3</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#">Sector 2<span class="badge badge-pill badge-success">5</span></a>
+                                        <a href="../html/postulaciones_historial.html">Sector 2<span
+                                                class="badge badge-pill badge-success">5</span></a>
                                     </li>
                                     <li>
-                                        <a href="#">Sector 3<span class="badge badge-pill badge-danger">0</span></a>
+                                        <a href="../html/postulaciones_historial.html">Sector 3<span
+                                                class="badge badge-pill badge-danger">0</span></a>
                                     </li>
                                     <li>
-                                        <a href="#">Sector 3<span class="badge badge-pill badge-danger">0</span></a>
+                                        <a href="../html/postulaciones_historial.html">Sector 3<span
+                                                class="badge badge-pill badge-danger">0</span></a>
                                     </li>
                                 </ul>
                             </div>
@@ -220,18 +261,21 @@
                             <div class="sidebar-submenu">
                                 <ul>
                                     <li>
-                                        <a href="#">Sector 1
+                                        <a href="../html/ofertas_laborales.html">Sector 1
                                             <span class="badge badge-pill badge-success">3</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#">Sector 2<span class="badge badge-pill badge-success">5</span></a>
+                                        <a href="../html/ofertas_laborales.html">Sector 2<span
+                                                class="badge badge-pill badge-success">5</span></a>
                                     </li>
                                     <li>
-                                        <a href="#">Sector 3<span class="badge badge-pill badge-primary">0</span></a>
+                                        <a href="../html/ofertas_laborales.html">Sector 3<span
+                                                class="badge badge-pill badge-primary">0</span></a>
                                     </li>
                                     <li>
-                                        <a href="#">Sector 3<span class="badge badge-pill badge-primary">0</span></a>
+                                        <a href="../html/ofertas_laborales.html">Sector 3<span
+                                                class="badge badge-pill badge-primary">0</span></a>
                                     </li>
                                 </ul>
                             </div>
@@ -240,7 +284,7 @@
                         <li class="sidebar-dropdown">
                             <a href="#">
                                 <i class="fa fa-chart-line"></i>
-                                <span>Estadisticas</span>
+                                <span>Estadísticas</span>
                             </a>
                             <div class="sidebar-submenu">
                                 <ul>
@@ -271,8 +315,8 @@
                             <div class="sidebar-submenu">
                                 <ul>
                                     <li>
-                                        <a href="#">Google maps<span
-                                                class="badge badge-pill badge-light text-dark">off</span></a>
+                                        <a href="../html/ubicacion.html">Google maps<span
+                                                class="badge badge-pill badge-success ">on</span></a>
                                     </li>
                                     <li>
                                         <a href="#">Open street map<span
@@ -306,6 +350,7 @@
                     </ul>
                 </div>
                 <!-- sidebar-menu  -->
+
             </div>
             <!-- sidebar-content  -->
             <div class="sidebar-footer">
@@ -313,11 +358,11 @@
                     <i class="fa fa-bell"></i>
                     <span class="badge badge-pill badge-warning notification">3</span>
                 </a>
-                <a href="../html/nosotros.html">
+                <a href="../html/contactar.html">
                     <i class="fa fa-envelope"></i>
                     <span class="badge badge-pill badge-success notification">7</span>
                 </a>
-                <a href="#">
+                <a href="../html/postulacion.html">
                     <i class="fa fa-cog"></i>
                     <span class="badge-sonar"></span>
                 </a>
@@ -329,7 +374,201 @@
         <!-- sidebar-wrapper  -->
         <main class="page-content">
             <div class="container-fluid">
-                trabajando en historial de postulaciones ...
+                <div class="container">
+                    <div class="row">
+
+                        <section class="container">
+                            <h1 class="text-center">Postulantes</h1>
+                            <div class="">
+                                <div class="panel panel-default">
+                                    <div class="panel-body">
+                                        <div class="pull-right">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-success btn-filter"
+                                                    data-target="pagado">Contratado</button>
+                                                <button type="button" class="btn btn-warning btn-filter"
+                                                    data-target="pendiente">Pendiente</button>
+                                                <button type="button" class="btn btn-danger btn-filter"
+                                                    data-target="cancelado">Rechazado</button>
+                                                <button type="button" class="btn btn-default btn-filter"
+                                                    data-target="all">Todos</button>
+                                            </div>
+                                        </div>
+                                        <div class="table-container">
+                                            <table class="table table-filter">
+                                                <tbody>
+                                                    <tr data-status="pagado">
+                                                        <td>
+                                                            <div class="ckbox">
+                                                                <input type="checkbox" id="checkbox1">
+                                                                <label for="checkbox1"></label>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <a href="javascript:;" class="star">
+                                                                <i class="fa fa-star"></i>
+                                                            </a>
+                                                        </td>
+                                                        <td>
+                                                            <div class="media">
+                                                                <a href="#" class="pull-left">
+                                                                    <img src="../recurso/imagen/logo.svg"
+                                                                        class="media-photo">
+                                                                </a>
+                                                                <div class="media-body">
+                                                                    <span class="media-meta pull-right">Febrero 13,
+                                                                        2016</span>
+                                                                    <h4 class="title">
+                                                                        Juan Gallardo
+                                                                        <span
+                                                                            class="pull-right pagado">(Contratado)</span>
+                                                                    </h4>
+                                                                    <p class="summary">Sector de seguridad</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr data-status="pendiente">
+                                                        <td>
+                                                            <div class="ckbox">
+                                                                <input type="checkbox" id="checkbox3">
+                                                                <label for="checkbox3"></label>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <a href="javascript:;" class="star">
+                                                                <i class="fa fa-star"></i>
+                                                            </a>
+                                                        </td>
+                                                        <td>
+                                                            <div class="media">
+                                                                <a href="#" class="pull-left">
+                                                                    <img src="../recurso/imagen/logo.svg"
+                                                                        class="media-photo">
+                                                                </a>
+                                                                <div class="media-body">
+                                                                    <span class="media-meta pull-right">Febrero 13,
+                                                                        2016</span>
+                                                                    <h4 class="title">
+                                                                        Mikaela Patagua
+                                                                        <span
+                                                                            class="pull-right pendiente">(Pendiente)</span>
+                                                                    </h4>
+                                                                    <p class="summary">Sector de Desarrollo</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr data-status="cancelado">
+                                                        <td>
+                                                            <div class="ckbox">
+                                                                <input type="checkbox" id="checkbox2">
+                                                                <label for="checkbox2"></label>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <a href="javascript:;" class="star">
+                                                                <i class="fa fa-star"></i>
+                                                            </a>
+                                                        </td>
+                                                        <td>
+                                                            <div class="media">
+                                                                <a href="#" class="pull-left">
+                                                                    <img src="../recurso/imagen/logo.svg"
+                                                                        class="media-photo">
+                                                                </a>
+                                                                <div class="media-body">
+                                                                    <span class="media-meta pull-right">Febrero 13,
+                                                                        2016</span>
+                                                                    <h4 class="title">
+                                                                        jasinto Valdez
+                                                                        <span
+                                                                            class="pull-right cancelado">(Rechazado)</span>
+                                                                    </h4>
+                                                                    <p class="summary">Sector de Mantenimiento</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr data-status="pagado" class="selected">
+                                                        <td>
+                                                            <div class="ckbox">
+                                                                <input type="checkbox" id="checkbox4" checked>
+                                                                <label for="checkbox4"></label>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <a href="javascript:;" class="star star-checked">
+                                                                <i class="fa fa-star"></i>
+                                                            </a>
+                                                        </td>
+                                                        <td>
+                                                            <div class="media">
+                                                                <a href="#" class="pull-left">
+                                                                    <img src="../recurso/imagen/logo.svg"
+                                                                        class="media-photo">
+                                                                </a>
+                                                                <div class="media-body">
+                                                                    <span class="media-meta pull-right">Febrero 13,
+                                                                        2016</span>
+                                                                    <h4 class="title">
+                                                                        Mariano Moras
+                                                                        <span
+                                                                            class="pull-right pagado">(Contratado)</span>
+                                                                    </h4>
+                                                                    <p class="summary">Sector de seguridad</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr data-status="pendiente">
+                                                        <td>
+                                                            <div class="ckbox">
+                                                                <input type="checkbox" id="checkbox5">
+                                                                <label for="checkbox5"></label>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <a href="javascript:;" class="star">
+                                                                <i class="fa fa-star"></i>
+                                                            </a>
+                                                        </td>
+                                                        <td>
+                                                            <div class="media">
+                                                                <a href="#" class="pull-left">
+                                                                    <img src="../recurso/imagen/logo.svg"
+                                                                        class="media-photo">
+                                                                </a>
+                                                                <div class="media-body">
+                                                                    <span class="media-meta pull-right">Febrero 13,
+                                                                        2016</span>
+                                                                    <h4 class="title">
+                                                                        Laura Fernadez
+                                                                        <span
+                                                                            class="pull-right pendiente">(Pendiente)</span>
+                                                                    </h4>
+                                                                    <p class="summary">Sector de Administración</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <p>
+                                        Page © - 2016 <br>
+                                        Powered By <a href="https://www.facebook.com/tavo.qiqe.lucero"
+                                            target="_blank">TavoQiqe</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+
+                    </div>
+                </div>
             </div>
         </main>
         <!-- page-content" -->
@@ -347,7 +586,7 @@
                         </li>
                         <li class="list-inline-item">⋅</li>
                         <li class="list-inline-item">
-                            <a href="../html/nosotros.html"><i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                            <a href="../html/contactar.html"><i class="fa fa-paper-plane-o" aria-hidden="true"></i>
                                 Contactar</a>
                         </li>
                         <li class="list-inline-item">⋅</li>
@@ -357,7 +596,7 @@
                         </li>
                         <li class="list-inline-item">
                             <a href="../html/nosotros.html"><i class="fa fa-user-secret" aria-hidden="true"></i>
-                                Politicas de privacidad</a>
+                                Políticas de privacidad</a>
                         </li>
                     </ul>
                     <p class=" text-muted small mb-4 mb-lg-0">© Mojoave 2018. All Rights Reserved.</p>
@@ -382,7 +621,7 @@
                             </a>
                         </li>
                         <li class="list-inline-item">
-                            <a href="https://github.com/jevdesk?tab=repositories" target="_blank">
+                            <a href="https://github.com/jevdesk/postulad-hia.git" target="_blank">
                                 <i class="fa fa-github fa-2x fa-fw"></i>
                             </a>
                         </li>

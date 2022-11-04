@@ -2,6 +2,38 @@
 <html lang="es">
 
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9BR7KDVLK2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-9BR7KDVLK2');
+    </script>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (m, e, t, r, i, k, a) {
+            m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+            m[i].l = 1 * new Date();
+            for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
+            k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+        })
+            (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(91054293, "init", {
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+            webvisor: true,
+            ecommerce: "dataLayer"
+        });
+    </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/91054293" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ofertas</title>
@@ -47,6 +79,7 @@
     <!------ css local ---------->
     <link href="../css/style.css" rel="stylesheet">
     <link href="../css/sidebar2.css" rel="stylesheet" id="bootstrap-css">
+    <link href="../css/login.css" rel="stylesheet">
 
 </head>
 
@@ -134,9 +167,29 @@
             </div>
         </div>
     </nav>
-    <div class="page-wrapper chiller-theme toggled">
-        ¡trabajando en login!
-        <!-- page-content" -->
+    <div class="page-wrapper chiller-theme toggled login">
+        <div class="container login-container ">
+            <div class="row justify-content-center">
+                <div class="col-md-6 login-form-1 bg-light">
+                    <h3>Iniciar Sesión</h3>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Email *" value="" />
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Password *" value="" />
+                        </div>
+                        <div class="form-group text-center">
+                            <input type="submit" class="btnSubmit" value="Login" disabled />
+                        </div>
+                        <div class="form-group">
+                            <a href="../html/nosotros.html" class="ForgetPwd">¿Olvidó su Contraseña?</a>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
     </div>
 
     <footer class="footer bg-dark">
@@ -161,7 +214,7 @@
                         </li>
                         <li class="list-inline-item">
                             <a href="../html/nosotros.html"><i class="fa fa-user-secret" aria-hidden="true"></i>
-                                Politicas de privacidad</a>
+                                Políticas de privacidad</a>
                         </li>
                     </ul>
                     <p class=" text-muted small mb-4 mb-lg-0">© Mojoave 2018. All Rights Reserved.</p>
@@ -186,7 +239,7 @@
                             </a>
                         </li>
                         <li class="list-inline-item">
-                            <a href="../https://github.com/jevdesk?tab=repositories" target="_blank">
+                            <a href="https://github.com/jevdesk/postulad-hia.git" target="_blank">
                                 <i class="fa fa-github fa-2x fa-fw"></i>
                             </a>
                         </li>
