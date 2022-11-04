@@ -71,7 +71,7 @@
 /*----------------page-wrapper----------------*/
 
 .page-wrapper {
-    height: 100vh;
+    height: auto;
 }
 
 .page-wrapper .theme {
@@ -121,7 +121,7 @@
     height: 100%;
     max-height: 100%;
     position: fixed;
-    top: 80;
+    
     left: -300px;
     z-index: 999;
 }

@@ -47,6 +47,7 @@
     <!------ css local ---------->
     <link href="../css/style.css" rel="stylesheet">
     <link href="../css/sidebar2.css" rel="stylesheet" id="bootstrap-css">
+    <link href="../css/login.css" rel="stylesheet">
 
 </head>
 
@@ -134,9 +135,29 @@
             </div>
         </div>
     </nav>
-    <div class="page-wrapper chiller-theme toggled">
-        ¡trabajando en login!
-        <!-- page-content" -->
+    <div class="page-wrapper chiller-theme toggled login">
+        <div class="container login-container ">
+            <div class="row justify-content-center">
+                <div class="col-md-6 login-form-1 bg-light">
+                    <h3>Iniciar Sesión</h3>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Tu Email *" value="" />
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Tu Password *" value="" />
+                        </div>
+                        <div class="form-group text-center">
+                            <input type="submit" class="btnSubmit" value="Login" disabled />
+                        </div>
+                        <div class="form-group">
+                            <a href="../html/nosotros.html" class="ForgetPwd">¿Olvidó su Contraseña?</a>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
     </div>
 
     <footer class="footer bg-dark">
